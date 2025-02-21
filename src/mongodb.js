@@ -8,14 +8,8 @@ mongoose.connect("mongodb://localhost:27017/rampriya")
 })
 
 const LoginSchema=new mongoose.Schema({
-    name:{
-        type:String,
-        required:true
-    },
-    password:{
-        type:String,
-        required:true
-    }
+    name:String,
+    password:String,
 })
 
 const collection=new mongoose.model("week5",LoginSchema)
