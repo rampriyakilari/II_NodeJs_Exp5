@@ -1,5 +1,5 @@
 const mongoose=require("mongoose")
-mongoose.connect("mongodb://localhost:27017/bhavani")
+mongoose.connect("mongodb://localhost:27017/rampriya")
 .then(()=>{
     console.log("Mongo db connected")
 })
@@ -18,5 +18,5 @@ const LoginSchema=new mongoose.Schema({
     }
 })
 
-const collection=new mongoose.model("bhavani1",LoginSchema)
+const collection=new mongoose.model("week5",LoginSchema)
 module.exports=collection
